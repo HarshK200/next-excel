@@ -1,21 +1,13 @@
-"use client";
+import CellRow from "@/components/CellRow";
 
-export default function CellRow() {
+export default function CellGrid() {
   return (
-    <div className="flex">
-      <Cell />
-      <Cell />
-      <Cell />
-      <Cell />
-      <Cell />
-      <Cell />
-    </div>
-  );
-}
-
-function Cell() {
-  return (
-    <div className="flex h-[26px] w-[96px] border-[1px] border-neutral-300 m-[-0.5px]">
+    <div>
+      <CellRow />
+      <CellRow />
+      <CellRow />
+      <CellRow />
+      <CellRow />
     </div>
   );
 }
